@@ -64,6 +64,18 @@ if (sections.length && navAnchors.length) {
   sections.forEach((s) => spy.observe(s));
 }
 
+// ---------- timeline dot blink for the entry in view ----------
+const timelineItems = document.querySelectorAll(".timeline-item");
+if (timelineItems.length) {
+  const dotObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((e) => e.target.classList.toggle("active", e.isIntersecting));
+    },
+    { rootMargin: "-25% 0px -45% 0px" }
+  );
+  timelineItems.forEach((item) => dotObserver.observe(item));
+}
+
 // ---------- scroll reveal ----------
 if (reducedMotion) {
   document.querySelectorAll(".reveal").forEach((el) => el.classList.add("visible"));
@@ -125,8 +137,9 @@ const counterObserver = new IntersectionObserver(
       const el = e.target;
       const target = parseFloat(el.dataset.count);
       const suffix = el.dataset.suffix || "";
+      const prefix = el.dataset.prefix || "";
       if (reducedMotion) {
-        el.textContent = target + suffix;
+        el.textContent = prefix + target + suffix;
         return;
       }
       const dur = 1400;
@@ -134,7 +147,7 @@ const counterObserver = new IntersectionObserver(
       const step = (now) => {
         const p = Math.min((now - start) / dur, 1);
         const eased = 1 - Math.pow(1 - p, 3);
-        el.textContent = Math.round(target * eased) + suffix;
+        el.textContent = prefix + Math.round(target * eased) + suffix;
         if (p < 1) requestAnimationFrame(step);
       };
       requestAnimationFrame(step);
