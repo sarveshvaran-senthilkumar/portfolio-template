@@ -29,7 +29,6 @@ export function Projects() {
                     </span>
                     <span className="inline-flex items-center gap-1.5 text-[0.8rem] text-muted transition-colors duration-200 group-hover/card:text-accent">
                       <GitHubIcon className="w-4 h-4" />
-                      View on GitHub
                       <span className="transition-transform duration-200 group-hover/card:translate-x-0.5 group-hover/card:-translate-y-0.5">
                         ↗
                       </span>
