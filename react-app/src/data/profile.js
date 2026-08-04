@@ -211,12 +211,13 @@ export const RESEARCH = {
     {
       year: "2026",
       title: "Automatic Diabetic Retinopathy Grading using Hybrid Feature Fusion Approach",
-      doi: "https://doi.org/10.1109/I5CPS67958.2026.11452585",
+      doi: "https://ieeexplore.ieee.org/document/11452585",
       stack: "Transfer Learning · Image Enhancement · EfficientNet · Feature Fusion",
       points: [
-        "I developed a hybrid approach that fuses EfficientNet deep features with handcrafted color and texture features to grade diabetic retinopathy severity from retinal fundus images.",
-        "I worked with the APTOS 2019 dataset, tackling severe class imbalance with class weighting and augmentation so the model stays sensitive across every severity level.",
-        "My best pipeline, built on Random Forest, outperformed other classifiers by over 2% and showed that deep and handcrafted features complement each other, especially on the minority severe classes, making screening more reliable and clinically feasible.",
+        "I built a hybrid feature-extraction pipeline that combines features from a pretrained EfficientNet model with handcrafted color and texture features to classify the severity of diabetic retinopathy from retinal fundus images.",
+        "I worked with the APTOS 2019 retinal fundus image dataset and addressed class imbalance using data augmentation and class-weighting techniques, improving the model's ability to detect underrepresented severity levels.",
+        "I trained and compared multiple machine learning classifiers on the extracted features, with Random Forest achieving the best performance — 73.41% test accuracy and a Cohen's Kappa score of 0.8411.",
+        "I improved diabetic retinopathy classification by combining deep learning with handcrafted features, producing more reliable predictions across different disease stages and supporting practical clinical screening.",
       ],
       metrics: [
         { value: "73.41%", label: "Test Accuracy" },
@@ -226,12 +227,13 @@ export const RESEARCH = {
     {
       year: "2025",
       title: "Multimodal Deep Learning Framework for Early Parkinson's Diagnosis",
-      doi: "https://doi.org/10.1109/ICCCNP63914.2025.11233723",
+      doi: "https://ieeexplore.ieee.org/document/11233723",
       stack: "Multimodal Classification · Biomarkers · KNN & SVM · Decision-Level Fusion",
       points: [
-        "I built a multimodal framework that combines structural MRI and speech signal analysis to catch Parkinson's Disease early and accurately.",
-        "I used AlexNet for deep feature extraction with PCA for dimensionality reduction, then trained and validated tuned SVM and KNN classifiers on both the MRI and speech feature sets.",
-        "By fusing the MRI and speech predictions at the decision level I improved diagnostic accuracy, and I packaged the results in a MATLAB tool designed for clinical usability.",
+        "I built a multimodal system that combines structural MRI scans and speech signals to improve the early detection of Parkinson's disease by using information from both data sources.",
+        "I extracted meaningful features from MRI images using AlexNet and applied Principal Component Analysis (PCA) to reduce feature dimensions, improving both computational efficiency and model performance.",
+        "I trained and evaluated Support Vector Machine (SVM) and K-Nearest Neighbors (KNN) classifiers on MRI and speech features to identify the most effective model for Parkinson's disease classification.",
+        "I improved overall prediction accuracy by combining MRI- and speech-based model outputs through decision-level fusion, and developed a MATLAB interface to visualize results and make the system easier to use.",
       ],
       metrics: [
         { value: "92%", label: "Accuracy" },
