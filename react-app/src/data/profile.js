@@ -157,7 +157,7 @@ export const PROJECTS = {
   items: [
     {
       meta: "2026",
-      title: "AI Resume Screener",
+      title: "Resume Screening and Candidate Intelligence Platform Embedded with AI-Assistance",
       repo: "https://github.com/sarveshvaran-senthilkumar/AI-Resume-Screener",
       stack: "Python · Flask · Sentence-Transformers · FAISS · scikit-learn",
       lead: "An intelligent resume-screening platform that ranks applicants against a job description using <strong>hybrid AI scoring</strong>, with skill-gap analysis and a built-in RAG assistant for HR teams.",
@@ -170,7 +170,7 @@ export const PROJECTS = {
     },
     {
       meta: "2026",
-      title: "IPL Auction Simulator (PWA)",
+      title: "AI-Powered Real-Time Cricket Auction Simulator and Player Intelligence Platform",
       repo: "https://github.com/sarveshvaran-senthilkumar/auction-simulator",
       stack: "FastAPI · WebSockets · React · Vite · PWA",
       lead: "A phone-first, installable PWA that recreates the IPL mega-auction — manage a <strong>₹120 Cr</strong> franchise and bid live against <strong>9 AI-controlled teams</strong> over real-time WebSockets.",
@@ -183,7 +183,7 @@ export const PROJECTS = {
     },
     {
       meta: "2026",
-      title: "E-Split",
+      title: "Collaborative Expense Tracking Platform with Shared Management and Debt Settlement",
       repo: "https://github.com/sarveshvaran-senthilkumar/E-Split",
       stack: "FastAPI · SQLAlchemy · React · Tailwind · WebSockets",
       lead: "A shared-expense tracker for hostel, PG, and flat roommates — split bills, settle up over UPI, and get budget nudges when spending drifts.",
