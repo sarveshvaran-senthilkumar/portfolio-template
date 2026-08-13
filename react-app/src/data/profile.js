@@ -163,7 +163,7 @@ export const PROJECTS = {
     "A selection of systems I've built and designed. Click any project to open its GitHub repository.",
   items: [
     {
-      meta: "2026",
+      meta: "2025-26",
       title: "Resume Screening and Candidate Intelligence Platform Embedded with AI-Assistance",
       repo: "https://github.com/sarveshvaran-senthilkumar/AI-Resume-Screener",
       stack: "Python · Flask · Sentence-Transformers · FAISS · Ollama · SQLite",
@@ -178,7 +178,7 @@ export const PROJECTS = {
       ],
     },
     {
-      meta: "2026",
+      meta: "2025",
       title: "AI-Powered Real-Time Cricket Auction Simulator and Player Intelligence Platform",
       repo: "https://github.com/sarveshvaran-senthilkumar/auction-simulator",
       stack: "FastAPI · WebSockets · asyncio · React · PWA",
@@ -193,7 +193,7 @@ export const PROJECTS = {
       ],
     },
     {
-      meta: "2026",
+      meta: "2024-25",
       title: "Collaborative Expense Tracking Platform with Shared Management and Debt Settlement",
       repo: "https://github.com/sarveshvaran-senthilkumar/E-Split",
       stack: "FastAPI · SQLAlchemy · PostgreSQL · React · WebSockets · Docker",
