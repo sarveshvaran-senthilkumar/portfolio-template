@@ -142,6 +142,7 @@ export const ACHIEVEMENTS = {
   intro: "Recognitions and awards from hackathons, ideathons, and technical competitions. Click the hackathon title to view its repository.",
   items: [
     {
+      year: "2023",
       meta: "Dec 2023 · Amrita Vishwa Vidyapeetham, Chennai",
       title: "Runner-Up — 24-Hour Coding Hackathon",
       repo: "https://github.com/sarveshvaran-senthilkumar/movie-ticket-booking",
@@ -152,14 +153,6 @@ export const ACHIEVEMENTS = {
         "I implemented 9 database-level integrity constraints to prevent booking conflicts, pricing inconsistencies, and over-refunds independently of the application layer.",
         "I built a clean, modular architecture with 83 modules, 96 unit tests, and 8 concurrency tests, with automated CI checks and Docker-based deployment."
       ],
-    },
-    {
-      meta: "Dec 2022 · SRM Institute of Science and Technology",
-      title: "Third Runner-Up — Ideathon",
-      repo: "",
-      stack: "RTOS · IoT · Embedded",
-      lead: "I developed an RTOS-based smart home automation system focused on task scheduling and device control.",
-      points: [],
     }
   ]
 };

@@ -16,7 +16,7 @@ export function Achievements() {
             const cardContent = (
               <Card tilt className="h-full flex flex-col md:grid md:grid-cols-[auto_1fr] gap-6 text-left">
                 <div className="font-display font-bold text-[1.6rem] gradient-text leading-tight shrink-0 md:w-[70px]">
-                  {item.meta.slice(0, 4)} {/* extract year for pub-card style side block */}
+                  {item.year}
                 </div>
                 <div>
                   <span className="font-body font-medium text-[0.82rem] text-accent tracking-[0.04em] block mb-1">
