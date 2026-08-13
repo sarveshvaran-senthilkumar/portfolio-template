@@ -27,6 +27,7 @@
         <li><a href="#home" class="active">Home</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
         <li><a href="#research">Research</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -193,21 +194,6 @@
           </ul>
         </div>
       </div>
-
-      <div class="grid-2" style="margin-top: 56px;">
-        <div class="card reveal" data-tilt>
-          <span class="timeline-meta">Dec 2023</span>
-          <h3>Runner-Up — 24-Hour Coding Hackathon</h3>
-          <p class="stack-line">Redis · Flask · Real-Time</p>
-          <p>Built a scalable event ticket booking platform with Redis caching and real-time booking workflows under a 24-hour deadline.</p>
-        </div>
-        <div class="card reveal reveal-d1" data-tilt>
-          <span class="timeline-meta">Dec 2022 · SRM Institute of Science and Technology</span>
-          <h3>Third Runner-Up — Ideathon</h3>
-          <p class="stack-line">RTOS · IoT · Embedded</p>
-          <p>Developed an RTOS-based smart home automation system focused on task scheduling and device control.</p>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -268,6 +254,49 @@
 
       </div>
 
+    </div>
+  </section>
+
+  <!-- ============ ACHIEVEMENTS ============ -->
+  <section id="achievements">
+    <div class="container">
+      <h2 class="section-title reveal">What I've <span class="gradient-text">accomplished</span></h2>
+      <p class="section-sub reveal">Recognitions and awards from hackathons, ideathons, and technical competitions. Click the hackathon title to view its repository.</p>
+
+      <div style="display: grid; gap: 26px; margin-top: 36px;">
+
+        <div class="card pub-card reveal" data-tilt>
+          <div class="pub-year">2023</div>
+          <div>
+            <span class="timeline-meta" style="display: block; font-size: 0.82rem; color: var(--accent); margin-bottom: 4px;">Dec 2023 · Amrita Vishwa Vidyapeetham, Chennai</span>
+            <h3 style="font-family: var(--font-display); font-size: 1.35rem; margin-bottom: 6px;">
+              <a class="pub-title-link" href="https://github.com/sarveshvaran-senthilkumar/movie-ticket-booking" target="_blank" rel="noopener">Runner-Up — 24-Hour Coding Hackathon</a>
+            </h3>
+            <p class="stack-line">Python · Flask · Redis · PostgreSQL · Docker</p>
+            <p style="margin-bottom: 14px;">
+              I won Runner-Up at a 24-hour coding hackathon for building CineVerde, a production-grade movie ticket booking platform with OTP authentication and role-based access control.
+            </p>
+            <ul class="feature-list">
+              <li>I engineered a concurrency-safe booking system using Redis distributed locks and PostgreSQL SERIALIZABLE transactions, achieving 0 double-bookings under 500 concurrent users competing for a single seat.</li>
+              <li>I implemented 9 database-level integrity constraints to prevent booking conflicts, pricing inconsistencies, and over-refunds independently of the application layer.</li>
+              <li>I built a clean, modular architecture with 83 modules, 96 unit tests, and 8 concurrency tests, with automated CI checks and Docker-based deployment.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card pub-card reveal" data-tilt>
+          <div class="pub-year">2022</div>
+          <div>
+            <span class="timeline-meta" style="display: block; font-size: 0.82rem; color: var(--accent); margin-bottom: 4px;">Dec 2022 · SRM Institute of Science and Technology</span>
+            <h3 style="font-family: var(--font-display); font-size: 1.35rem; margin-bottom: 6px;">Third Runner-Up — Ideathon</h3>
+            <p class="stack-line">RTOS · IoT · Embedded</p>
+            <p style="margin-bottom: 14px;">
+              I developed an RTOS-based smart home automation system focused on task scheduling and device control.
+            </p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

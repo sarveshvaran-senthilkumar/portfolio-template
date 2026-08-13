@@ -17,6 +17,7 @@ export const NAV_LINKS = [
   { id: "home", label: "Home" },
   { id: "experience", label: "Experience" },
   { id: "projects", label: "Projects" },
+  { id: "achievements", label: "Achievements" },
   { id: "research", label: "Research" },
   { id: "contact", label: "Contact" },
 ];
@@ -134,20 +135,33 @@ export const EXPERIENCE = {
       "Beyond academics, I actively volunteered in student clubs and coordinated campus events, strengthening my leadership, teamwork, and organizational skills.",
     ],
   },
-  achievements: [
+};
+
+export const ACHIEVEMENTS = {
+  title: ["What I've ", "accomplished"],
+  intro: "Recognitions and awards from hackathons, ideathons, and technical competitions. Click the hackathon title to view its repository.",
+  items: [
     {
-      meta: "Dec 2023",
+      meta: "Dec 2023 · Amrita Vishwa Vidyapeetham, Chennai",
       title: "Runner-Up — 24-Hour Coding Hackathon",
-      stack: "Redis · Flask · Real-Time",
-      body: "Built a scalable event ticket booking platform with Redis caching and real-time booking workflows under a 24-hour deadline.",
+      repo: "https://github.com/sarveshvaran-senthilkumar/movie-ticket-booking",
+      stack: "Python · Flask · Redis · PostgreSQL · Docker",
+      lead: "I won Runner-Up at a 24-hour coding hackathon for building CineVerde, a production-grade movie ticket booking platform with OTP authentication and role-based access control.",
+      points: [
+        "I engineered a concurrency-safe booking system using Redis distributed locks and PostgreSQL SERIALIZABLE transactions, achieving 0 double-bookings under 500 concurrent users competing for a single seat.",
+        "I implemented 9 database-level integrity constraints to prevent booking conflicts, pricing inconsistencies, and over-refunds independently of the application layer.",
+        "I built a clean, modular architecture with 83 modules, 96 unit tests, and 8 concurrency tests, with automated CI checks and Docker-based deployment."
+      ],
     },
     {
       meta: "Dec 2022 · SRM Institute of Science and Technology",
       title: "Third Runner-Up — Ideathon",
+      repo: "",
       stack: "RTOS · IoT · Embedded",
-      body: "Developed an RTOS-based smart home automation system focused on task scheduling and device control.",
-    },
-  ],
+      lead: "I developed an RTOS-based smart home automation system focused on task scheduling and device control.",
+      points: [],
+    }
+  ]
 };
 
 export const PROJECTS = {

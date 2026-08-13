@@ -8,6 +8,7 @@ import { Hero } from "./components/sections/Hero";
 import { About } from "./components/sections/About";
 import { Experience } from "./components/sections/Experience";
 import { Projects } from "./components/sections/Projects";
+import { Achievements } from "./components/sections/Achievements";
 import { Research } from "./components/sections/Research";
 import { Contact } from "./components/sections/Contact";
 import { Closing } from "./components/sections/Closing";
@@ -32,6 +33,7 @@ export default function App() {
         <About />
         <Experience />
         <Projects />
+        <Achievements />
         <Research />
         <Contact />
         <Closing />

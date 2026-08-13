@@ -3,7 +3,7 @@ import { NAV_LINKS } from "../../data/profile";
 import { useScrollProgress } from "../../hooks/useScrollProgress";
 import { useScrollSpy } from "../../hooks/useScrollSpy";
 
-const SPY_IDS = ["home", "about", "experience", "projects", "research", "contact"];
+const SPY_IDS = ["home", "about", "experience", "projects", "achievements", "research", "contact"];
 const SPY_MAP = { about: "home" };
 
 export function Navbar() {

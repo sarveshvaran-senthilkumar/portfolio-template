@@ -7,7 +7,7 @@ import { StackLine } from "../ui/StackLine";
 import { TimelineItem } from "./TimelineItem";
 
 export function Experience() {
-  const { title, work, education, achievements } = EXPERIENCE;
+  const { title, work, education } = EXPERIENCE;
 
   return (
     <section id="experience" className="py-[88px]">
@@ -32,20 +32,6 @@ export function Experience() {
             bullets={education.bullets}
             last
           />
-        </div>
-
-        {/* achievements */}
-        <div className="grid md:grid-cols-2 gap-[22px] mt-14">
-          {achievements.map((a, i) => (
-            <Reveal key={a.title} delay={i}>
-              <Card tilt>
-                <span className="font-body font-medium text-[0.82rem] text-accent tracking-[0.04em]">{a.meta}</span>
-                <h3 className="font-display text-[1.18rem] mt-1 mb-2 tracking-[-0.01em]">{a.title}</h3>
-                <StackLine>{a.stack}</StackLine>
-                <p className="text-muted text-[0.95rem]">{a.body}</p>
-              </Card>
-            </Reveal>
-          ))}
         </div>
       </Container>
     </section>
