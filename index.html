@@ -265,23 +265,25 @@
 
       <div style="display: grid; gap: 26px; margin-top: 36px;">
 
-        <div class="card pub-card reveal" data-tilt>
-          <div class="pub-year">2023</div>
-          <div>
-            <span class="timeline-meta" style="display: block; font-size: 0.82rem; color: var(--accent); margin-bottom: 4px;">Dec 2023 · Amrita Vishwa Vidyapeetham, Chennai</span>
-            <h3 style="font-family: var(--font-display); font-size: 1.35rem; margin-bottom: 6px;">
-              <a class="pub-title-link" href="https://github.com/sarveshvaran-senthilkumar/movie-ticket-booking" target="_blank" rel="noopener">Runner-Up — 24-Hour Coding Hackathon</a>
-            </h3>
-            <p class="stack-line">Python · Flask · Redis · PostgreSQL · Docker</p>
-            <p style="margin-bottom: 14px;">
-              I won Runner-Up at a 24-hour coding hackathon for building CineVerde, a production-grade movie ticket booking platform with OTP authentication and role-based access control.
-            </p>
-            <ul class="feature-list">
-              <li>I engineered a concurrency-safe booking system using Redis distributed locks and PostgreSQL SERIALIZABLE transactions, achieving 0 double-bookings under 500 concurrent users competing for a single seat.</li>
-              <li>I implemented 9 database-level integrity constraints to prevent booking conflicts, pricing inconsistencies, and over-refunds independently of the application layer.</li>
-              <li>I built a clean, modular architecture with 83 modules, 96 unit tests, and 8 concurrency tests, with automated CI checks and Docker-based deployment.</li>
-            </ul>
-        </div>
+        <a class="card reveal" data-tilt href="https://github.com/sarveshvaran-senthilkumar/movie-ticket-booking" target="_blank" rel="noopener" style="text-decoration: none; color: inherit; display: block;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 8px;">
+            <span class="timeline-meta" style="margin-bottom: 0;">Dec 2023 · Amrita Vishwa Vidyapeetham, Chennai</span>
+            <span style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.8rem; color: var(--text-muted);">
+              <svg viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: currentColor;"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.35.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.04 11.04 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12 0 1.53-.01 2.76-.01 3.14 0 .3.2.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+              <span>↗</span>
+            </span>
+          </div>
+          <h3 style="font-family: var(--font-display); font-size: 1.18rem; margin: 4px 0 6px; letter-spacing: -0.01em;">Runner-Up — 24-Hour Coding Hackathon</h3>
+          <p class="stack-line">Python · Flask · Redis · PostgreSQL · Docker</p>
+          <p style="margin-bottom: 14px;">
+            I won Runner-Up at a 24-hour coding hackathon for building CineVerde, a production-grade movie ticket booking platform with OTP authentication and role-based access control.
+          </p>
+          <ul class="feature-list">
+            <li>I engineered a concurrency-safe booking system using Redis distributed locks and PostgreSQL SERIALIZABLE transactions, achieving 0 double-bookings under 500 concurrent users competing for a single seat.</li>
+            <li>I implemented 9 database-level integrity constraints to prevent booking conflicts, pricing inconsistencies, and over-refunds independently of the application layer.</li>
+            <li>I built a clean, modular architecture with 83 modules, 96 unit tests, and 8 concurrency tests, with automated CI checks and Docker-based deployment.</li>
+          </ul>
+        </a>
 
       </div>
     </div>
