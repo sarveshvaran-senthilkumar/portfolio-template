@@ -143,7 +143,7 @@ export const ACHIEVEMENTS = {
   items: [
     {
       year: "2023",
-      meta: "Dec 2023 · Amrita Vishwa Vidyapeetham, Chennai",
+      meta: "2023",
       title: "Runner-Up — 24-Hour Coding Hackathon",
       repo: "https://github.com/sarveshvaran-senthilkumar/movie-ticket-booking",
       stack: "Python · Flask · Redis · PostgreSQL · Docker",
